@@ -1,0 +1,15 @@
+[Unit]
+Description=AtmMap
+
+[Service]
+Environment="Environment=prod"
+ExecStart=/opt/AtmMap/AtmMapServer
+WorkingDirectory=/opt/AtmMap/
+User=root
+Group=root
+Restart=on-failure
+SyslogIdentifier=AtmMap
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

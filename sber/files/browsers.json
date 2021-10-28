@@ -1,0 +1,10 @@
+{
+  "firefox": {
+    "default": "93.0",
+    "versions": {
+      "93.0": {
+        "image": "geckodriver.exe"
+      }
+    }
+  }
+}

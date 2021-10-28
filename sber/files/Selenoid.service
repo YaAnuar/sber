@@ -1,0 +1,14 @@
+[Unit]
+Description=Selenoid
+
+[Service]
+ExecStart=/opt/Selenoid/selenoid_linux_amd64
+WorkingDirectory=/opt/Selenoid/
+User=root
+Group=root
+Restart=on-failure
+SyslogIdentifier=Selenoid
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
